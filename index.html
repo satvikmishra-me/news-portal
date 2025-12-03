@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Insight Magazine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f6fa;
+            color: #222;
+            margin: 0;
+        }
+        header {
+            background: #111827;
+            color: #f9fafb;
+            text-align: center;
+            padding: 1.8em 1em;
+        }
+        header h1 {
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin-top: 0.4em;
+            font-size: 0.95rem;
+            color: #d1d5db;
+        }
+        nav {
+            background: #1f2933;
+            text-align: center;
+            padding: 0.7em;
+        }
+        nav a {
+            color: #e5e7eb;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 0.9rem;
+        }
+        .wrapper {
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 0 1em 3em;
+        }
+        section {
+            margin-bottom: 2.2em;
+        }
+        h2 {
+            font-size: 1.3rem;
+            margin-bottom: 0.6em;
+            color: #111827;
+        }
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75em;
+            margin-bottom: 1.2em;
+        }
+        .topics span {
+            padding: 4px 10px;
+            border-radius: 999px;
+            background: #e5e7eb;
+            font-size: 0.85rem;
+        }
+        .featured-article {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 1.3em;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+            margin-bottom: 1.5em;
+        }
+        .featured-article h3 {
+            margin-top: 0;
+        }
+        .article-list .article {
+            padding: 0.7em 0;
+            border-top: 1px solid #e5e7eb;
+        }
+        .article small {
+            display: block;
+            font-size: 0.78rem;
+            color: #6b7280;
+        }
+        .article p {
+            font-size: 0.9rem;
+            margin: 0.3em 0 0;
+        }
+        .subscription-box {
+            background: #111827;
+            color: #f9fafb;
+            border-radius: 8px;
+            padding: 1.4em 1.2em;
+        }
+        .subscription-box p {
+            font-size: 0.9rem;
+            margin-bottom: 0.8em;
+        }
+        .subscription-box input[type="email"] {
+            width: 100%;
+            padding: 7px;
+            border-radius: 4px;
+            border: none;
+            margin-bottom: 0.6em;
+        }
+        .subscription-box input[type="submit"] {
+            background: #f97316;
+            color: #111827;
+            border: none;
+            border-radius: 4px;
+            padding: 7px 16px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: #111827;
+            color: #9ca3af;
+            font-size: 0.8rem;
+        }
+        @media (max-width: 600px) {
+            .wrapper { padding: 0 0.8em 2.5em; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DAILY INSIGHT</h1>
+        <p>Minimal news & opinions on tech, health, and money</p>
+    </header>
+    <nav>
+        <a href="#featured">Featured</a>
+        <a href="#topics">Topics</a>
+        <a href="#subscribe">Subscribe</a>
+    </nav>
+
+    <div class="wrapper">
+        <section id="topics">
+            <h2>Sections</h2>
+            <div class="topics">
+                <span>Technology</span>
+                <span>Health</span>
+                <span>Finance</span>
+                <span>World</span>
+                <span>Lifestyle</span>
+            </div>
+        </section>
+
+        <section id="featured">
+            <h2>Featured Article</h2>
+            <div class="featured-article">
+                <h3>How AI Is Changing Everyday Life</h3>
+                <small>Technology • November 2025</small>
+                <p>
+                    From phones to healthcare, artificial intelligence now powers many tools used daily. 
+                    This overview explains the biggest changes in a simple way.
+                </p>
+            </div>
+
+            <div class="article-list">
+                <div class="article">
+                    <h3>Simple Habits for Better Sleep</h3>
+                    <small>Health</small>
+                    <p>Small changes in light, timing, and screens can improve your sleep quality.</p>
+                </div>
+                <div class="article">
+                    <h3>Money Basics: Building an Emergency Fund</h3>
+                    <small>Finance</small>
+                    <p>Why a small monthly saving habit matters more than market timing.</p>
+                </div>
+                <div class="article">
+                    <h3>Morning Brief: What Happened Overnight</h3>
+                    <small>World</small>
+                    <p>A short summary of key global stories to start your day informed.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <h2>Stay Updated</h2>
+            <div class="subscription-box">
+                <p>Get the latest stories in your inbox once a week. No spam, only curated articles.</p>
+                <form>
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <input type="submit" value="Subscribe">
+                </form>
+                <p style="font-size:0.75rem; color:#d1d5db; margin-top:0.4em;">
+                    (Form is for demo only and does not send data.)
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Daily Insight Magazine
+    </footer>
+</body>
+</html>
